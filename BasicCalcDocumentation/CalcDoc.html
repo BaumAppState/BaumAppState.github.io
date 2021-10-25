@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        font-family: Arial;
+        padding: 30px;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      nav {
+        font-family: Arial;
+        float: left;
+        width: 30%;
+        background: #ffffff;
+        padding: 30px;
+      }
+
+      nav ul {
+        font-family: Arial;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        font-family: Arial;
+        float: left;
+        padding: 30px;
+        width: 50%;
+        background-color: #f2f2f2;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media (max-width: 600px) {
+
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Basic Two-Operand Calculator</h2>
+      <h2 style="font-size:75%;">by Payton Baum</h2>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#Introduction">Introduction</a>
+          </li>
+          <br>
+          <li>
+            <a href="#Requirements">Requirements</a>
+          </li>
+          <br>
+          <li>
+            <a href="#Download">Download</a>
+          </li>
+          <br>
+          <li>
+            <a href="#Directions">Directions</a>
+          </li>
+          <br>
+          <li>
+            <a href="#FAQ">FAQ/Troubleshooting</a>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Introduction <a id="Introduction"></a>
+        </h1>
+        <p>The following documentation is intended to help download, run, and operate a basic two-operand calculator application. The calculator application can perform addition, subtraction, multiplication, and division between two operands.</p>
+        <h1>Requirements <a id="Requirements"></a>
+        </h1>
+        <ul>
+          <li>
+            <p>
+              <b>Terminal</b> - You will need access to your computer’s terminal to run this application.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Java JDK (Java Development Kit)</b> - You will need a Java Compiler to compile and run the application files. If you do not already have a Java JDK downloaded on your computer, you can download the proper version for your operating system <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">here.</a>
+            </p>
+          </li>
+        </ul>
+        <h1>Download <a id="Download"></a>
+        </h1>
+        <ul>
+          <li>
+            <p>
+              <b>Basic Calculator Application</b> - You can download the Calculator application <a href="https://github.com/BaumAppState/Basic-Calculator-by-Payton.git" target="_blank"> here.</a> Click the green “Code” box then click “Download Zip.” Extract the files within the ZIP.
+            </p>
+            <p>
+              <i>It’s recommended that you save the files to a location you have easy access to such as your Desktop.</i>
+            </p>
+          </li>
+        </ul>
+        <h1>Directions <a id="Directions"></a>
+        </h1>
+        <ol>
+          <li>
+            <p>
+              <b>Check Requirements</b> - Make sure you have the necessary requirements and download the Calculator application file.
+            </p>
+            <p>
+              <br>
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Open The Terminal</b> - After you’ve downloaded the files and extracted/saved them to an easy-access location, open your terminal. On Windows, this can be done by clicking on the start menu and searching “cmd” or “Command Prompt.”
+            </p>
+            <p>
+                <img src="img1.jpg" style="width:600px;"/>
+              <br>
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Compile The .java File</b> - In the Command Line, type “javac” followed by a space and the file path/address of the Calculator.java file you downloaded.
+            </p>
+            <p>
+              <i>Example: “javac C:/Users/baump/OneDrive/Desktop/Basic-Calculator-by-Payton-main/Calculator.java</i>
+            </p>
+            <p>
+              <i>If you need help locating the file path, on Windows, right click the file and then go down to “Properties.” You will find the file path next to the label “Location:”</i>
+            </p>
+            <p>
+                <img src="img2.jpg" style="width:600px;"/>
+              <br>
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Run The Java Application</b> - In the Command Line, type “java” followed by a space and the file path/address of the Calculator.java file you downloaded.
+            </p>
+            <p>
+              <i>This should be the same file path as the previous step.</i>
+            </p>
+            <p>
+                <img src="img3.jpg" style="width:600px;"/>
+              <br>
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Access Calculator Window</b> - The calculator application should automatically open in a separate window and you’re ready to begin calculating. If you don’t see it, check to see if the window is minimized or hidden on screen.
+            </p>
+            <p>
+              <i>If you still can’t find it, review the previous steps.</i>
+            </p>
+            <p>
+                <img src="img4.jpg"/>
+              <br>
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Operate The Calculator</b> - To operate the calculator, simply type your first operand into the first blank text box and your second operand in the second blank text box. To apply an operation to the operands, simply click the corresponding button of the desired operation. To perform a different calculation, simply change the numbers in the operand boxes and click an operation button.
+            </p>
+            <p>
+              <br>
+            </p>
+          </li>
+        </ol>
+        <h1>FAQ/Troubleshooting <a id="FAQ"></a>
+        </h1>
+        <ul>
+          <p>How can I calculate an equation with three or more operands at one time?</p>
+          <ul>
+            <p>
+              <i>Unfortunately, the current build of the basic calculator application only allows for mathematical calculations between two operands at once.</i>
+            </p>
+          </ul>
+          <p>
+            <b>Source Code</b> - Source Code can be found on <a href="https://github.com/BaumAppState/Basic-Calculator-by-Payton.git" target="_blank"> Github.</a>
+          </p>
+          <p>
+            <b>Contact:</b>
+          </p>
+          <ul>
+            <p>You can contact the creator via email with any questions, comments, or concerns. <br>
+              <br>Email: baumpl@appstate.edu
+            </p>
+          </ul>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>
